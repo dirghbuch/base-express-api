@@ -20,7 +20,8 @@
     "body-parser": "^1.12.3",
     "express": "^4.12.3",
     "jade": "^1.9.2",
-    "aws-sdk": "^2.94.0"
+    "aws-sdk": "^2.94.0",
+    "aws-serverless-express": "^3.0.2"
   },
   "devDependencies": {
     "mocha": "^2.2.4",
