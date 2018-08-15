@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'))
 app.use(awsServerlessExpressMiddleware.eventContext({ deleteHeaders: false }), bodyParser.json());
 
 app.use(bodyParser.urlencoded({extended: true}))
-app.use(require('./controllers'))
+app.use('/items', require('./controllers'))
 
 app.listen(port, function() {
   console.log('Listening on port ' + port)
